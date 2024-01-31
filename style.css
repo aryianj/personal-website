@@ -189,11 +189,12 @@ header {
     background-color: #2977B7;
 }
 
-.left-container, .right-container {
+.connect {
     height: 100%;
-    width: 50%;
+    width: 100%;
+    display: inline-flex;
+    z-index: 1;
     top: 0;
-    display: flex;
     overflow-x: hidden;
     padding-top: 20px;
     color: white;
@@ -201,8 +202,9 @@ header {
   
 .left-container {
     display: block;
-    float: left;
+    left: 0;
     padding-left: 20px;
+    width: 50%;
 }
 
 .left-container h1 { 
@@ -217,11 +219,12 @@ header {
    margin-left: 57px;
 }
 .right-container {
-    float: right;
+    right: 0;
     background-color: #2977B7;
     display: block;
     padding-left: 20px;
     height: 650px;
+    width: 50%;
 }
 
 .right-container h1 {
