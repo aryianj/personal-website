@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Jersey+25&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#nav {
+    font-size: 1.1em;
+    height: 8vh;
+}
+
+img {
+    height: 70vh;
+    border: black 2px solid;
+
+}
+
+#txt {
+    font-size: .9em;
+    height: 70vh;
+    inline-size: 30em;
+    font-weight: 500;
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem 2rem;
+    border: black 2px solid;
+    background: linear-gradient(-45deg, #FF6961, #AEC6CF, #FDFD96);
+    margin-left: 23em;
+
+}
