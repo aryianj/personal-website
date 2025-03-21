@@ -15,19 +15,19 @@ function Works() {
           </div>
           <div className="grid grid-cols-3 gap-4 mx-20 mt-5">
             <div className="...">
-              <img src='./src/assets/cal.png'/>
+              <img src='/cal.png'/>
               <p><a href='https://weekly-calendar-ten.vercel.app/'>My Calendar on a URL</a><br />
               <span className='font-light'>React, Tailwind, Vite, Vercel</span>
               </p>
             </div>
             <div className="...">
-              <img src='./src/assets/path.png'/>
+              <img src='/path.png'/>
               <p>PathNow (url on request/in development)<br />
               <span className='font-light'>React, Tailwind, Vite, Heroku, OpenAI API, Python, Node.js, MongoDB, Firebase</span>
               </p>
             </div>
             <div className="...">
-              <img src='./src/assets/git.png'/>
+              <img src='/git.png'/>
               <p><a href='https://github.com/aryianj'>Everything else is on GitHub</a><br />
               <span className='font-light'>Other known languages: Java, C, Go, Python, Javascript</span>
               </p>

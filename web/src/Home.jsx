@@ -19,7 +19,7 @@ function Home() {
                 and CS student @ USFCA. <a href='/about'>Click to learn more!</a></p>
               </div>
               <div className="...">
-                <img src='./src/assets/hm.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!'>
+                <img src='/hm.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!'>
                 </img>
               </div>
             </div>

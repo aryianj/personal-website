@@ -27,7 +27,7 @@ function About() {
                 often find me on Haight street or on the BART.</p>
               </div>
               <div className="...">
-                <img src='./src/assets/abt.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!' />
+                <img src='/abt.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!' />
               </div>
             </div>
         </div>
