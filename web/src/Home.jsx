@@ -17,7 +17,7 @@ function Home() {
                 </h1>
                 <p className='pl-20 text-center'>pronounced uh-ryan</p>
                 <p className='mt-30 text-center'>Aryian Jones is an aspiring front-end web engineer <br />
-                and CS student @ USFCA. <Link to="/about">Click to learn more!</Link></p>
+                and CS student @ USFCA. <Link to="/about"><p>Click to learn more!</p></Link></p>
               </div>
               <div className="...">
                 <img src='/hm.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!'>
