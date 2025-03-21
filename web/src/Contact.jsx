@@ -62,7 +62,7 @@ function Contact() {
                     <div className='flex flex-col ml-30 mt-10'>
                         <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='https://www.linkedin.com/in/aryianjones/'>LinkedIn</a></button>
                         <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='https://app.joinhandshake.com/profiles/nerzkk'>Handshake</a></button>
-                        <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='./public/Aryian-Jones-Resume-2025.pdf'>Resume</a></button>
+                        <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='/Aryian-Jones-Resume-2025.pdf'>Resume</a></button>
                     </div>
                 </div>
                 <div className="...">
