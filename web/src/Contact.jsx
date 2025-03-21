@@ -50,7 +50,7 @@ function Contact() {
         <div className='flex h-screen w-screen bg-gradient-to-b from-[#1380CD] to-[#BFDCEA] items-center justify-center'>
             <div className='flex flex-col justify-center bg-white h-180 w-360 rounded-3xl border-1 drop-shadow-2xl'>
             <Nav />
-                <div class="grid grid-cols-2 gap-4 mx-20 mt-20">
+                <div className="grid grid-cols-2 gap-4 mx-20 mt-20">
                 <div className="mt-10">
                     <h1 className='abt text-8xl text-center'>Contact
                     <span className='me text-center'>Me</span>
@@ -65,9 +65,9 @@ function Contact() {
                         <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='./public/Aryian-Jones-Resume-2025.pdf'>Resume</a></button>
                     </div>
                 </div>
-                <div class="...">
+                <div className="...">
                     <form method='POST' onSubmit={onSubmit}>
-                        <div class="grid grid-cols-2 gap-4 mx-20 mt-10">
+                        <div className="grid grid-cols-2 gap-4 mx-20 mt-10">
                             <label>
                                 First Name
                                 <input type='text' className='border-1 rounded-2xl h-10' id='firstName' onChange={fName} required></input>

@@ -8,7 +8,7 @@ function About() {
       <div className='flex h-screen w-screen bg-gradient-to-b from-[#1380CD] to-[#BFDCEA] items-center justify-center'>
         <div className='flex flex-col justify-center bg-white h-180 w-360 rounded-3xl border-1 drop-shadow-2xl'>
          <Nav />
-            <div class="grid grid-cols-2 gap-4 mx-20 mt-20">
+            <div className="grid grid-cols-2 gap-4 mx-20 mt-20">
               <div className=" ">
                 <h1 className='abt text-8xl text-center'>About
                   <span className='me text-center'>Me</span>
@@ -26,8 +26,8 @@ function About() {
                 fantasy novels and playing the sims. You can  <br />  
                 often find me on Haight street or on the BART.</p>
               </div>
-              <div class="...">
-                <img src='./public/abt.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!' />
+              <div className="...">
+                <img src='./src/assets/abt.jpeg' className='h-110 rounded-3xl border-6 border-[#1480CD]' alt='picture of me!' />
               </div>
             </div>
         </div>
