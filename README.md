@@ -1,3 +1,3 @@
 #Personal Website
 
-Made with React, Tailwind, PHP, node.js, Vercel, and love. <3
+Made with React, Tailwind, EmailJS, Vercel, and love. <3
