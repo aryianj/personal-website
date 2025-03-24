@@ -1,9 +1,7 @@
 import Nav from './Nav';
 import { Link } from "react-router-dom";
 
-
 function Home() {
-
   return (
     <>
       <div className='flex h-screen w-screen bg-gradient-to-b from-[#1380CD] to-[#BFDCEA] items-center justify-center'>

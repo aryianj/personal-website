@@ -1,49 +1,28 @@
-import { useState } from 'react';
 import Nav from './Nav';
-import axios from 'axios'
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 function Contact() {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [msg, setMsg] = useState("");
-
-    const fName = (e) => {
-        setFirstName(e.target.value);
-    };
-    const lName = (e) => {
-        setLastName(e.target.value);
-    };
-    const eMail = (e) => {
-        setEmail(e.target.value);
-    };
-    const message = (e) => {
-        setMsg(e.target.value);
-    };
-
+    const formRef = useRef(null);
     const onSubmit = (e) => {
         e.preventDefault();
         
-        axios({
-            method: "POST",
-            url:"http://localhost:3002//send",
-            data:  JSON.stringify({
-                email: email,
-                name: firstName + " " + lastName,
-                message: msg
-            })
-          }).then((response)=>{
-            if (response.data.status === 'success') {
-              alert("Message Sent.");
-              setFirstName("");
-              setLastName("");
-              setEmail("");
-              setMsg("");
-            } else if(response.data.status === 'fail') {
-              alert("Message failed to send.")
-            }
-          })
-    };
+        emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then((response) => {
+            console.log("Email sent successfully!", response);
+        })
+        .catch((error) => {
+            console.error("Email failed to send", error);
+        });
+        
+        e.target.reset();
+      };
 
     return (
         <>
@@ -66,27 +45,29 @@ function Contact() {
                     </div>
                 </div>
                 <div className="...">
-                    <form method='POST' onSubmit={onSubmit}>
-                        <div className="grid grid-cols-2 gap-4 mx-20 mt-10">
+                    <form ref={formRef} method="POST" onSubmit={onSubmit}>
+                    <div className='mx-20 mt-5'>
                             <label>
-                                First Name
-                                <input type='text' className='border-1 rounded-2xl h-10' id='firstName' onChange={fName} required></input>
-                            </label>
-                            <label>
-                                Last Name
-                                <input type='text' className='border-1 rounded-2xl h-10' id='lastName' onChange={lName} required></input>
+                                Name <br />
+                                <input type='text' className='border-1 rounded-2xl w-110 h-12 p-2' name="name" required></input>
                             </label>
                         </div>
                         <div className='mx-20 mt-5'>
                             <label>
                                 Email <br />
-                                <input type='email' className='border-1 rounded-2xl w-110 h-12' id='email' onChange={eMail} required></input>
+                                <input type='email' className='border-1 rounded-2xl w-110 h-12 p-2' name="email" required></input>
+                            </label>
+                        </div>
+                        <div className='mx-20 mt-5'>
+                            <label>
+                                Title <br />
+                                <input type='text' className='border-1 rounded-2xl w-110 h-12 p-2' name="title" required></input>
                             </label>
                         </div>
                         <div className='mx-20 mt-5'>
                             <label>
                                 Message <br />
-                                <textarea className='border-1 rounded-2xl w-110 h-50' id='message' onChange={message} required></textarea>
+                                <textarea className='border-1 rounded-2xl w-110 h-50 p-2' name="message" required></textarea>
                             </label>
                         </div>
                         <div className='mx-65 mt-5'>

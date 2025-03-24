@@ -17,10 +17,7 @@ function Nav() {
               <Link to="/contact"><p className="block py-2 px-3 text-gray-900 rounded-sm text-4xl hover:bg-gray-100 ">CONTACT</p></Link>
               </li>
               <li>
-              <Link to="/"><p>
-                  <h1 className='text-center text-7xl '>Aryian Jones</h1>
-                </p>
-                </Link>
+              <Link to="/"><h1 className='text-center text-7xl '>Aryian Jones</h1></Link>
               </li>
               <li> 
                 <MdOutlineStar className="text-9xl rotate-12 -mt-8 text-[#1480CD]" />
