@@ -16,7 +16,7 @@ function Works() {
           <div className="grid grid-cols-3 gap-4 mx-20 mt-5">
             <div className="...">
               <img src='/cal.png'/>
-              <p><a href='https://weekly-calendar-ten.vercel.app/'>My Calendar on a URL</a><br />
+              <p><a href='https://weekly-aryian.vercel.app/'>My Calendar on a URL</a><br />
               <span className='font-light'>React, Tailwind, Vite, Vercel</span>
               </p>
             </div>
