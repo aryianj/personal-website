@@ -26,55 +26,56 @@ function Contact() {
 
     return (
         <>
-        <div className='flex h-screen w-screen bg-gradient-to-b from-[#1380CD] to-[#BFDCEA] items-center justify-center'>
-            <div className='flex flex-col justify-center bg-white h-180 w-360 rounded-3xl border-1 drop-shadow-2xl'>
-            <Nav />
-                <div className="grid grid-cols-2 gap-4 mx-20 mt-20">
-                <div className="mt-10">
-                    <h1 className='abt text-8xl text-center'>Contact
-                    <span className='me text-center'>Me</span>
-                    </h1>
-                    <p className='tag mt-10 ml-30'>Are you a company or brand wanting to collaborate <br />
-                    on a web project or hire an intern/new grad? Please, <br />
-                    reach out via the form or contact me at aryianjones03@gmail.com
-                    </p>
-                    <div className='flex flex-col ml-30 mt-10'>
-                        <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='https://www.linkedin.com/in/aryianjones/'>LinkedIn</a></button>
-                        <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='https://app.joinhandshake.com/profiles/nerzkk'>Handshake</a></button>
-                        <button type='button' className='border-1 rounded-3xl w-100 mb-3'><a href='/Aryian-Jones-Resume-2025.pdf'>Resume</a></button>
+            <div className='sm:flex h-screen w-screen sm:bg-gradient-to-b sm:from-[#1380CD] sm:to-[#BFDCEA] sm:items-center sm:justify-center'>
+                <div className='flex flex-col sm:bg-white sm:h-180 sm:w-360 sm:rounded-3xl sm:border-1 sm:drop-shadow-2xl'>
+                    <Nav />
+                    <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 sm:mx-20 sm:mt-20">
+                        <div>
+                            <h1 className='abt sm:text-7xl text-6xl text-center'>Contact
+                                <span className='me text-center'>Me</span>
+                            </h1>
+                            <p className='tag mt-2 sm:mx-0 mx-4 text-center'>Are you a company or brand wanting to collaborate <br />
+                            on a web project or hire an intern/new grad? Please, <br />
+                            reach out here or email aryianjones03@gmail.com
+                            </p>
+                            <div className='flex flex-col sm:ml-30 mt-6 sm:mx-0 mx-4'>
+                                <button type='button' className='border-1 rounded-3xl sm:w-100 mb-3'><a href='https://www.linkedin.com/in/aryianjones/'>LinkedIn</a></button>
+                                <button type='button' className='border-1 rounded-3xl sm:w-100 mb-3'><a href='https://app.joinhandshake.com/profiles/nerzkk'>Handshake</a></button>
+                                <button type='button' className='border-1 rounded-3xl sm:w-100 mb-3'><a href='/Aryian-Jones-Resume-2025.pdf'>Resume</a></button>
+                            </div>
+                        </div>
+                    <div>
+                        
+                        <form ref={formRef} method="POST" className='sm:w-xl sm:mx-20 mx-4' onSubmit={onSubmit}>
+                            <div className='my-4'>
+                                <label>
+                                    Name <br />
+                                    <input type='text' className='border-1 rounded-2xl sm:w-full w-72 p-2' name="name" placeholder='Jane Doe' required></input>
+                                </label>
+                            </div>
+                            <div className='my-4'>
+                                <label>
+                                    Email <br />
+                                    <input type='email' className='border-1 rounded-2xl  sm:w-full w-72 p-2' name="email" placeholder='jane@email.com' required></input>
+                                </label>
+                            </div>
+                            <div className='my-4'>
+                                <label>
+                                    Title <br />
+                                    <input type='text' className='border-1 rounded-2xl sm:w-full w-72 p-2' name="title" placeholder='Reaching out for a project...' required></input>
+                                </label>
+                            </div>
+                            <div className='my-4'>
+                                <label>
+                                    Message <br />
+                                    <textarea className='border-1 rounded-2xl  sm:w-full w-72 h-40 p-2' name="message" placeholder='Hey, can you create a website...' required></textarea>
+                                </label>
+                            </div>
+                            <div className='flex justify-center my-4'>
+                                <button type='submit' className='border-1 rounded-3xl p-2'>Submit!</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div className="...">
-                    <form ref={formRef} method="POST" onSubmit={onSubmit}>
-                    <div className='mx-20 mt-5'>
-                            <label>
-                                Name <br />
-                                <input type='text' className='border-1 rounded-2xl w-110 h-12 p-2' name="name" required></input>
-                            </label>
-                        </div>
-                        <div className='mx-20 mt-5'>
-                            <label>
-                                Email <br />
-                                <input type='email' className='border-1 rounded-2xl w-110 h-12 p-2' name="email" required></input>
-                            </label>
-                        </div>
-                        <div className='mx-20 mt-5'>
-                            <label>
-                                Title <br />
-                                <input type='text' className='border-1 rounded-2xl w-110 h-12 p-2' name="title" required></input>
-                            </label>
-                        </div>
-                        <div className='mx-20 mt-5'>
-                            <label>
-                                Message <br />
-                                <textarea className='border-1 rounded-2xl w-110 h-50 p-2' name="message" required></textarea>
-                            </label>
-                        </div>
-                        <div className='mx-65 mt-5'>
-                            <button type='submit' className='border-1 rounded-3xl p-2'>Submit!</button>
-                        </div>
-                    </form>
-                </div>
                 </div>
             </div>
         </div>
