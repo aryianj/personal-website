@@ -15,6 +15,11 @@ function About() {
       title: 'Internet Archive',
       description: 'A non-profit digital library for all things digital for free!',
     },
+    {
+      image: '/ascii-art.png',
+      title: 'ASCII Art',
+      description: 'A collection of ASCII art for all your text-based needs!',
+    },
  
   ];
 
