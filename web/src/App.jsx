@@ -1,9 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home';
-import Works from './Works';
-import About from './About';
-import Contact from './Contact';
+import Archive from './Archive';
 
 function App() {
   return (
@@ -11,9 +9,7 @@ function App() {
     <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/works" element={<Works />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/archive" element={<Archive />} />
           </Routes>
         </BrowserRouter>
     </>

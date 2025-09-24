@@ -1,31 +1,125 @@
+
+import Footer from './Footer';
 import Nav from './Nav';
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 function Home() {
+  const projects = [
+    {
+      image: '/path.png',
+      title: 'Path',
+      description: 'React, Tailwind, Heroku, OpenAI API, Python, and more',
+    },
+    {
+      image: '/cal.png',
+      title: 'Calendar App',
+      description: 'React, Vercel, Tailwind, Node.js',
+    },
+ 
+  ];
+  const [index, setIndex] = useState(0);
+  const prev = () => setIndex(i => (i === 0 ? projects.length - 1 : i - 1));
+  const next = () => setIndex(i => (i === projects.length - 1 ? 0 : i + 1));
+  const project = projects[index];
   return (
     <>
-      <div className='sm:flex h-screen w-screen sm:bg-gradient-to-b sm:from-[#1380CD] sm:to-[#BFDCEA] sm:items-center sm:justify-center'>
-        <div className='flex flex-col sm:bg-white sm:h-180 sm:w-360 sm:rounded-3xl sm:border-1 sm:drop-shadow-2xl'>
-         <Nav />
-          <div className="grid sm:grid-cols-2 grid-cols-1 h-screen sm:m-4">
-            <div className="flex flex-col sm:h-full h-100 w-full border-1 sm:border-r-0 sm:border-[#1480CD] bg-[#1380CD] items-center justify-center text-white text-center px-4 sm:rounded-tl-2xl sm:rounded-bl-2xl">
-              <h1 className='fn text-8xl sm:mt-0 mt-4'>
-                Aryian 
-                <br /> 
-                <span className='ln'>Jones</span>
-              </h1>
-              <p className='mt-10'>CS @ USFCA <span className='text-sm'>(pronounced uh-ryan)</span> <br/> <Link to="/about">Click to learn more!</Link></p>
+  <div><img src="/grain.png" alt="" className="absolute w-full h-full mix-blend-plus-darker opacity-7 pointer-events-none" /></div>
+      <div className="p-3 bg-gradient-to-b from-gray-900 to-gray-500 w-screen h-screen">
+        <div className="h-full w-full flex flex-col bg-gray-50 rounded-lg p-6">
+          <Nav />
+          <div className='flex flex-row'>
+            <div className='w-1/3 p-4 border-2'>
+              <h1 className='text-lg'>About Me</h1>
+              <p className='text-sm'>Hey!! I’m Aryian (pronounced uh-ryan)
+                or Ryan. I am a 4th year Comp-Sci 
+                student graduating in December 2025
+                from the University of San Francisco.
+                My major interests in CS include Front
+                End Web Development and Software
+                Engineering. My preferred languages
+                are Go, Java, and JavaScript but I also 
+                know C, Python, Haskell, and RiscV. 
+                <br/><br/>
+                Although I am a Cleveland, Ohio native,
+                my heart (and body) resides in the Bay.
+                I love collecting trinkets, thrifting, 
+                reading novels, playing The Sims, learning new things, 
+                traveling, and making silly
+                websites.
+                <br/><br/>
+                I am open to internships and new grad
+                positions.
+                <br/><br/>
+                Feel free to reach out!
+              </p>
+
+              <h1 className='text-lg mt-2'>Languages</h1>
+              <ul className='text-sm'>
+                <li className="flex"><span className="w-32">HTML & CSS</span><span>★ ★ ★ ★ ★</span></li>
+                <li className="flex"><span className="w-32">JavaScript</span><span>★ ★ ★ ★ ☆</span></li>
+                <li className="flex"><span className="w-32">Go</span><span>★ ★ ★ ★ ☆</span></li>
+                <li className="flex"><span className="w-32">Python</span><span>★ ★ ★ ★ ☆</span></li>
+                <li className="flex"><span className="w-32">Java</span><span>★ ★ ★ ★ ☆</span></li>
+                <li className="flex"><span className="w-32">RiscV</span><span>★ ★ ★ ★ ☆</span></li>
+                <li className="flex"><span className="w-32">C</span><span>★ ★ ★ ☆ ☆</span></li>
+                <li className="flex"><span className="w-32">Haskell</span><span>★ ★ ☆ ☆ ☆</span></li>
+              </ul>
             </div>
-            <div className="flex flex-col h-full w-full items-center justify-center text-white text-center px-4 border-2 bg-white sm:border-[#1480CD] sm:rounded-tr-2xl sm:rounded-br-2xl sm:my-0 my-4">
-              <img src='/hm.jpeg' className='sm:h-110 rounded-3xl border-4 border-[#1480CD]' alt='picture of me!'/>
-              <p className='text-black sm:mb-0'>proficient in javascript, golang, python, java, c </p>
+            <div className='flex flex-1 flex-col p-4 border-2 ml-2'>
+              <p className='mb-2 text-lg'>Projects</p>
+              <div className="flex flex-col items-center w-fit max-h-80">                
+                <div className="flex items-center mb-2">
+                  <button onClick={prev} className="px-2 text-2xl">‹</button>
+                  <img src={project.image} alt={project.title} className="border-2 grayscale block mx-auto w-1/2" />
+                  <button onClick={next} className="px-2 text-2xl">›</button>
+                </div>
+                <div className="text-center w-1/2 h-auto mx-auto flex flex-col items-center">
+                  <p className="font-bold text-lg mb-1">{project.title}</p>
+                  <p className="text-sm break-words mb-1">{project.description}</p>
+                </div>
+                <div className="flex justify-center mt-2 space-x-1">
+                  {projects.map((_, i) => (
+                    <span key={i} className={`inline-block w-2 h-2 rounded-full ${i === index ? 'bg-gray-500' : 'bg-gray-300'}`}></span>
+                  ))}
+                </div>
+              </div>
+                <p className='text-lg'>Currently...</p>
+                <div className="flex flex-row justify-between mt-2">
+                  <div className='flex'>
+                    <ul>
+                      <li>Reading</li>
+                      <li className="text-sm"><span className='text-blue-600'>Katabasis</span> by RF. Kuang</li>
+                      <li className="text-sm"><span className='text-blue-600'>1984</span> by George Orwell</li>
+                    </ul>
+                  </div>
+                  <div className='flex'>
+                    <ul>
+                      <li>Learning</li>
+                      <li className="text-sm">Programming Language Paradigms @ USFCA</li>
+                      <li className="text-sm">Operating Systems @ USFCA</li>
+                      <li className="text-sm">Computer Architecture @ USFCA</li>
+                      <li className="text-sm">p5.js</li>
+                      <li className="text-sm">Photography</li>
+                    </ul>
+                  </div>
+                  <div className='flex'>
+                    <ul>
+                      <li>Loving</li>
+                      <li className="text-sm"><span className='text-blue-600'>Fleabag</span> - TV Show</li>
+                      <li className="text-sm"><span className='text-blue-600'>Logan</span> - Movie</li>
+                      <li className="text-sm"><span className='text-blue-600'>We Live in Time</span> - Movie</li>
+                      <li className="text-sm"><span className='text-blue-600'>The Social Network</span> - Movie</li>
+                      <li className="text-sm">Hanging out with friends</li>
+                    </ul>
+                  </div>
+                </div> 
             </div>
           </div>
+          <Footer />
         </div>
       </div>
-  </>
+    </>
   )
 }
 
 export default Home;
-/* <div className='flex flex-col h-screen w-screen'>      */
