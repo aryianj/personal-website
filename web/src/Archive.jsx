@@ -32,7 +32,38 @@ function About() {
       title: 'Martyr!',
       author: 'Kaveh Akbar',
     },
- 
+     {
+      title: 'This is How You Lose the Time War',
+      author: 'Amal El-Mohtar and Max Gladstone',
+    },
+    {
+      title: 'The Hypocrite',
+      author: 'Jo Hamya',
+    },
+    {
+      title: 'Ace of Spades',
+      author: 'Faridah Àbíké-Íyímídé',
+    },
+    {
+      title: 'The Yellow Wallpaper',
+      author: 'Charlotte Perkins Gilman',
+    },
+    {
+      title: 'The Metamorphosis',
+      author: 'Franz Kafka',
+    },
+    {
+      title: 'Carmilla',
+      author: 'Joseph Sheridan Le Fanu',
+    },
+    {
+      title: 'The Dance Boots',
+      author: 'Linda LeGarde Grover',
+    },
+    {
+      title: 'Open Water',
+      author: 'Caleb Azumah Nelson',
+    },
   ];
 
   const substacks = [
