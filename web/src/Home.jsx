@@ -20,7 +20,11 @@ function Home() {
       title: 'Birthday Command',
       description: 'C, Unix, Command Line Tool',
     },
- 
+    {
+      image: '/quiz.png',
+      title: 'Quiz App',
+      description: 'React, Tailwind, Vercel, Tailwind',
+    },
   ];
   const [index, setIndex] = useState(0);
   const prev = () => setIndex(i => (i === 0 ? projects.length - 1 : i - 1));
@@ -55,7 +59,8 @@ function Home() {
                 I am open to internships and new grad
                 positions.
                 <br/><br/>
-                Feel free to reach out!
+                Feel free to reach out, connect with me on LinkedIn, or
+                view my GitHub!
               </p>
 
               <h1 className='text-lg mt-2'>Languages</h1>
