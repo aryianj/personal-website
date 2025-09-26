@@ -15,6 +15,11 @@ function Home() {
       title: 'Calendar App',
       description: 'React, Vercel, Tailwind, Node.js',
     },
+     {
+      image: '/bday!.png',
+      title: 'Birthday Command',
+      description: 'C, Unix, Command Line Tool',
+    },
  
   ];
   const [index, setIndex] = useState(0);
