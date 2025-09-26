@@ -174,7 +174,7 @@ function About() {
       <div className="p-3 bg-gradient-to-b from-gray-900 to-gray-500 w-screen h-screen">
         <div className="h-full w-full flex flex-col bg-gray-50 rounded-lg p-6">
           <Nav />
-          <div className='flex flex-row xl:h-138'>
+          <div className='flex flex-row xl:h-140'>
             <div className='flex flex-1 flex-col p-4 border-2'>
               <p className='mb-2 text-lg'>Internet Finds</p>
               <div className="flex flex-col items-center w-fit">                
