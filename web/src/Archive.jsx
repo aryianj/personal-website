@@ -7,18 +7,27 @@ function About() {
   const projects = [
     {
       image: '/tooooools.png',
+      link: 'https://tooooools.app',
       title: 'tooooools.app',
       description: 'A cool website that allows you to add effects to images for free!',
     },
     {
       image: '/internet-archive.png',
+      link: 'https://archive.org',
       title: 'Internet Archive',
       description: 'A non-profit digital library for all things digital for free!',
     },
     {
       image: '/ascii-art.png',
       title: 'ASCII Art',
+      link: 'https://www.asciiart.eu/',
       description: 'A collection of ASCII art for all your text-based needs!',
+    },
+    {
+      image: '/saint-heron.png',
+      title: 'Saint Heron Library',
+      link: 'https://library.saintheron.com/',
+      description: 'A free library of Black and Brown literature and culture.',
     },
  
   ];
@@ -182,7 +191,9 @@ function About() {
                     <img src={project.image} alt={project.title} className="border-2 grayscale sm:h-103 mx-20" />
                   </div>
                 <div className="text-center w-1/2 flex flex-col items-center">
-                  <p className="font-bold text-lg mb-1">{project.title}</p>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold text-lg mb-1 hover:underline">
+                    {project.title}
+                  </a>
                   <p className="text-sm break-words">{project.description}</p>
                 </div>
                 <div className="flex justify-center mt-2 space-x-1">
