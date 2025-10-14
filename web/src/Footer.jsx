@@ -3,8 +3,10 @@ import './App.css'
 function Footer() {
   return (
     <>
-      <div className='justify-baseline mt-1'>
-          <p className='text-sm'>Made with React, Tailwind, Vercel, and Love by Aryian Jones</p>
+        <div className='mt-auto'>
+          <div className='flex px-2 items-center h-10'>
+            <p className='sm:text-sm text-xs'>Aryian Jones 2025</p>
+          </div>
       </div>
     </>
   )

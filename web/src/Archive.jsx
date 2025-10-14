@@ -179,22 +179,22 @@ function About() {
   const project = projects[index];
   return (
     <>
-  <div><img src="/grain.png" alt="" className="absolute w-full h-full mix-blend-plus-darker opacity-7 pointer-events-none" /></div>
-      <div className="p-3 bg-gradient-to-b from-gray-900 to-gray-500 w-screen h-screen">
-        <div className="h-full w-full flex flex-col bg-gray-50 rounded-lg p-6">
+      <div><img src="/grain.png" alt="" className="absolute w-full h-full mix-blend-plus-darker opacity-7 pointer-events-none" /></div>
+        <div className="min-w-screen min-h-screen sm:p-3 p-1 bg-gradient-to-b from-gray-900 to-gray-500 flex flex-col">
+        <div className="w-full flex-1 flex flex-col bg-gray-50 rounded-lg sm:pt-6 sm:px-6 sm:pb-0 pt-3 px-3 pb-0">
           <Nav />
-          <div className='flex flex-row xl:h-140'>
-            <div className='flex flex-1 flex-col p-4 border-2'>
-              <p className='mb-2 text-lg'>Internet Finds</p>
+          <div className='flex sm:flex-row flex-col xl:h-140'>
+            <div className='flex flex-1 flex-col p-4 border-2 sm:rounded-none rounded-xl sm:mb-0 mb-2'>
+              <p className='mb-2 sm:text-lg sm:text-left text-center'>Internet Finds</p>
               <div className="flex flex-col items-center w-fit">                
                   <div className="flex items-center mb-2 justify-center w-full">
                     <img src={project.image} alt={project.title} className="border-2 grayscale sm:h-103 mx-20" />
                   </div>
                 <div className="text-center w-1/2 flex flex-col items-center">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold text-lg mb-1 hover:underline">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="font-bold sm:text-lg mb-1 hover:underline">
                     {project.title}
                   </a>
-                  <p className="text-sm break-words">{project.description}</p>
+                  <p className="sm:text-sm text-xs break-words">{project.description}</p>
                 </div>
                 <div className="flex justify-center mt-2 space-x-1">
                   {projects.map((_, i) => (
@@ -208,56 +208,55 @@ function About() {
                 </div>
                 </div> 
             </div>
-            <div className='w-1/3 overflow-y-auto p-4 border-2 ml-2'>
-              <h1 className='text-lg mb-1'>Media & Places</h1>
+            <div className='sm:w-1/3 w-full p-4 sm:mx-2 border-2 sm:rounded-none rounded-xl sm:text-left text-center'>
+              <h1 className='sm:text-lg mb-1'>Media & Places</h1>
               <div className='flex flex-col'>
-                 <ul className='mb-4'>
+                 <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Bookstores</li>
                       {bookstores.map((bookstore, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{bookstore.title}</span> {bookstore.location}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{bookstore.title}</span> {bookstore.location}</li>
                       ))}
                       </ul>
-                    <ul className='mb-4'>
+                  <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Books</li>
                       {books.map((book, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{book.title}</span> by {book.author}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{book.title}</span> by {book.author}</li>
                       ))}
                     </ul>
-                     <ul className='mb-4'>
+                     <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Substacks</li>
                       {substacks.map((substack, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{substack.title}</span> by {substack.author}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{substack.title}</span> by {substack.author}</li>
                       ))}
                     </ul>
-                    
-                      <ul className='mb-4'>
+                    <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Events</li>
                       {events.map((event, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{event.title}</span> {event.location}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{event.title}</span> {event.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4'>
+                      <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Tech</li>
                       {tech.map((item, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{item.name}</span> {item.type}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{item.name}</span> {item.type}</li>
                       ))}
                     </ul>
-                       <ul className='mb-4'>
+                       <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Restaurants</li>
                       {restaurants.map((restaurant, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{restaurant.title}</span> {restaurant.location}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{restaurant.title}</span> {restaurant.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4'>
+                      <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Cafes</li>
                       {cafes.map((cafe, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{cafe.name}</span> {cafe.location}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{cafe.name}</span> {cafe.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4'>
+                      <ul className='mb-4 sm:text-medium text-sm'>
                       <li>Bakeries</li>
                       {bakeries.map((bakery, index) => (
-                        <li key={index} className="text-sm"><span className='text-blue-600'>{bakery.name}</span> {bakery.location}</li>
+                        <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{bakery.name}</span> {bakery.location}</li>
                       ))}
                     </ul>
                   </div>
