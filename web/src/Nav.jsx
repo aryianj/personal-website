@@ -6,7 +6,7 @@ function Nav() {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <nav className={`flex flex-row justify-between relative ${showMenu ? 'sm:mb-2 -mb-7' : 'sm:mb-2 -mb-18'} `}>
+  <nav className={`flex flex-row justify-between relative sm:mb-2 -mb-12`}>
         <div className='flex flex-row items-center text-gray-900 rounded-sm'>
           <img src="/a.png" className='sm:h-22 h-0 border-2 rounded-full sm:mr-4' alt="" />
           <div className="flex flex-col">
@@ -21,7 +21,7 @@ function Nav() {
             <span className={showMenu ? '' : 'hidden'}><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
           </button>
           {showMenu && (
-            <div className="flex flex-row sm:hidden p-2 absolute top-8 right-1.5 space-x-1">
+            <div className="flex flex-col sm:hidden p-2 absolute top-8 right-1.5 space-y-1 bg-gray-50 border rounded-md shadow-md z-20">
               <Link to="/" onClick={() => setShowMenu(false)}>Home</Link>
               <Link to="/archive" onClick={() => setShowMenu(false)}><p>Archive</p></Link>
               <a href="/Aryian-Jones-Resume-2025.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setShowMenu(false)}><p>Resume</p></a>

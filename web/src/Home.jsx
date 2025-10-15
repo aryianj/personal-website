@@ -90,9 +90,9 @@ function Home() {
   const project = projects[index];
   return (
     <>
-      <div><img src="/grain.png" alt="" className="absolute min-w-screen h-screen opacity-7 pointer-events-none" /></div>
-      <div className="min-w-screen min-h-screen sm:p-3 p-1 bg-gradient-to-b from-gray-900 to-gray-500 flex flex-col">
-        <div className="w-full flex-1 flex flex-col bg-gray-50 rounded-lg sm:pt-6 sm:px-6 sm:pb-0 pt-3 px-3 pb-0">
+      <div><img src="/grain.png" alt="" className="fixed inset-0 w-screen h-[100dvh] opacity-7 pointer-events-none" /></div>
+      <div className="min-w-screen min-h-[100dvh] sm:min-h-screen sm:p-3 p-1 bg-gradient-to-b from-gray-900 to-gray-500 flex flex-col">
+        <div className="w-full flex-1 min-h-0 flex flex-col bg-gray-50 rounded-lg sm:pt-6 sm:px-6 sm:pb-0 pt-3 px-3 pb-0">
             <Nav />
             <div className='flex sm:flex-row flex-col'>
               <div className='sm:w-1/3 w-full p-4 sm:mx-2 sm:my-0 my-2 border-2 sm:rounded-none rounded-xl'>

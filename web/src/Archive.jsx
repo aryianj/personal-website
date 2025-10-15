@@ -183,7 +183,7 @@ function About() {
         <div className="min-w-screen min-h-screen sm:p-3 p-1 bg-gradient-to-b from-gray-900 to-gray-500 flex flex-col">
         <div className="w-full flex-1 flex flex-col bg-gray-50 rounded-lg sm:pt-6 sm:px-6 sm:pb-0 pt-3 px-3 pb-0">
           <Nav />
-          <div className='flex sm:flex-row flex-col xl:h-140'>
+          <div className='flex sm:flex-row flex-col xl:h-140 sm:mt-0 mt-2'>
             <div className='flex flex-1 flex-col p-4 border-2 sm:rounded-none rounded-xl sm:mb-0 mb-2'>
               <p className='mb-2 sm:text-lg sm:text-left text-center'>Internet Finds</p>
               <div className="flex flex-col items-center w-fit">                
