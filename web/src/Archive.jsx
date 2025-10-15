@@ -208,7 +208,7 @@ function About() {
                 </div>
                 </div> 
             </div>
-            <div className='sm:w-1/3 w-full p-4 sm:mx-2 border-2 sm:rounded-none rounded-xl sm:text-left text-center'>
+            <div className='sm:w-1/3 w-full p-4 sm:mx-2 border-2 sm:rounded-none rounded-xl sm:text-left text-center overflow-y-scroll'>
               <h1 className='sm:text-lg mb-1'>Media & Places</h1>
               <div className='flex flex-col'>
                  <ul className='mb-4 sm:text-medium text-sm'>
