@@ -134,7 +134,7 @@ function Home() {
               <div className='flex flex-1 flex-col p-4 border-2 sm:rounded-none rounded-xl'>
                 <p className='mb-2 text-lg sm:text-left text-center'>Projects</p>
                 <div className="flex flex-col items-center w-fit max-h-80">                
-                <div className="flex items-center mb-2">
+                <div className="flex items-center mb-2 sm:h-100">
                   <button onClick={prev} className="px-2 text-2xl">‹</button>
                   <img src={project.image} alt={project.title} className="border-2 grayscale block mx-auto w-1/2" />
                   <button onClick={next} className="px-2 text-2xl">›</button>
