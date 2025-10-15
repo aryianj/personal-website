@@ -153,7 +153,7 @@ function Home() {
                 <div className="flex flex-row justify-between sm:mt-2 sm:text-left text-center">
                   <div className='flex'>
                     <ul>
-                      <li className='sm:text-medium text-sm'>Reading</li>
+                      <li className='sm:text-base text-sm'>Reading</li>
                       {reading.map(book => (
                         <li key={book.title} className="sm:text-sm text-xs"><span className='text-blue-600'>{book.title}</span> by {book.author}</li>
                       ))}
@@ -161,7 +161,7 @@ function Home() {
                   </div>
                   <div className='flex'>
                     <ul>
-                      <li className='sm:text-medium text-sm'>Learning</li>
+                      <li className='sm:text-base text-sm'>Learning</li>
                       {learning.map(course => (
                         <li key={course} className="sm:text-sm text-xs">{course}</li>
                       ))}
@@ -169,7 +169,7 @@ function Home() {
                   </div>
                   <div className='flex'>
                     <ul>
-                      <li className='sm:text-medium text-sm'>Loving</li>
+                      <li className='sm:text-base text-sm'>Loving</li>
                       {loving.map(item => (
                         <li key={item} className="sm:text-sm text-xs">{item}</li>
                       ))}

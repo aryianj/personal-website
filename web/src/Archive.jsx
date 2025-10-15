@@ -211,49 +211,49 @@ function About() {
             <div className='sm:w-1/3 w-full p-4 sm:mx-2 border-2 sm:rounded-none rounded-xl sm:text-left text-center overflow-y-scroll'>
               <h1 className='sm:text-lg mb-1'>Media & Places</h1>
               <div className='flex flex-col'>
-                 <ul className='mb-4 sm:text-medium text-sm'>
+                 <ul className='mb-4 sm:text-base text-sm'>
                       <li>Bookstores</li>
                       {bookstores.map((bookstore, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{bookstore.title}</span> {bookstore.location}</li>
                       ))}
                       </ul>
-                  <ul className='mb-4 sm:text-medium text-sm'>
+                  <ul className='mb-4 sm:text-base text-sm'>
                       <li>Books</li>
                       {books.map((book, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{book.title}</span> by {book.author}</li>
                       ))}
                     </ul>
-                     <ul className='mb-4 sm:text-medium text-sm'>
+                     <ul className='mb-4 sm:text-base text-sm'>
                       <li>Substacks</li>
                       {substacks.map((substack, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{substack.title}</span> by {substack.author}</li>
                       ))}
                     </ul>
-                    <ul className='mb-4 sm:text-medium text-sm'>
+                    <ul className='mb-4 sm:text-base text-sm'>
                       <li>Events</li>
                       {events.map((event, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{event.title}</span> {event.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4 sm:text-medium text-sm'>
+                      <ul className='mb-4 sm:text-base text-sm'>
                       <li>Tech</li>
                       {tech.map((item, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{item.name}</span> {item.type}</li>
                       ))}
                     </ul>
-                       <ul className='mb-4 sm:text-medium text-sm'>
+                       <ul className='mb-4 sm:text-base text-sm'>
                       <li>Restaurants</li>
                       {restaurants.map((restaurant, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{restaurant.title}</span> {restaurant.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4 sm:text-medium text-sm'>
+                      <ul className='mb-4 sm:text-base text-sm'>
                       <li>Cafes</li>
                       {cafes.map((cafe, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{cafe.name}</span> {cafe.location}</li>
                       ))}
                     </ul>
-                      <ul className='mb-4 sm:text-medium text-sm'>
+                      <ul className='mb-4 sm:text-base text-sm'>
                       <li>Bakeries</li>
                       {bakeries.map((bakery, index) => (
                         <li key={index} className="sm:text-sm text-xs"><span className='text-blue-600'>{bakery.name}</span> {bakery.location}</li>
