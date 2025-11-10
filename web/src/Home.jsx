@@ -20,10 +20,10 @@ function Home() {
       description: 'C, Unix, Command Line Tool',
     },
     {
-      image: '/quiz.png',
-      title: 'Quiz App',
-      description: 'React, Tailwind, Vercel, Tailwind',
-    },
+      image: '/donzart.png',
+      title: 'Donzart',
+      description: 'React, Typescript, Tailwind, NextJS, Convest'
+    }
   ];
 
   const reading = [
