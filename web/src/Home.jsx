@@ -26,13 +26,6 @@ function Home() {
     }
   ];
 
-  const reading = [
-    {
-      title: '1984',
-      author: 'George Orwell',
-    },
-  ];
-
   const languages = [
     {
       title: 'HTML & CSS',
@@ -68,6 +61,13 @@ function Home() {
     },
   ];
 
+    const reading = [
+    {
+      title: '1984',
+      author: 'George Orwell',
+    },
+  ];
+
   const learning = [
     'Programming Language Paradigms @ USFCA',
     'Operating Systems @ USFCA',
@@ -97,28 +97,18 @@ function Home() {
             <div className='flex sm:flex-row flex-col'>
               <div className='sm:w-1/3 w-full p-4 sm:mx-2 sm:my-0 my-2 border-2 sm:rounded-none rounded-xl'>
                 <h1 className='sm:text-lg sm:text-left text-center'>About Me</h1>
-                <p className='sm:text-sm text-xs sm:text-left text-center'>Hey!! I’m Aryian (pronounced uh-ryan)
-                  or Ryan. I am a 4th year Comp-Sci 
-                  student graduating in December 2025
-                  from the University of San Francisco.
-                  My major interests in CS include Front
-                  End Web Development and Software
-                  Engineering. My preferred languages
-                  are Go, Java, and JavaScript but I also 
-                  know C, Python, Haskell, and RiscV. 
+                <p className='sm:text-sm text-xs sm:text-left text-center'>
+                  Aryian Jones is a recent graduate and Software Engineer based in Cleveland, OH. Her experience
+                  ranges all across the stack in a multitude of languages such as Python, React.js, and Go.
                   <br/><br/>
-                  Although I am a Cleveland, Ohio native,
-                  my heart (and body) resides in the Bay.
-                  I love collecting trinkets, thrifting, 
-                  reading novels, playing The Sims, learning new things, 
-                  traveling, and making silly
-                  websites.
+                  With a solid foundation in Operating Systems, she is currently expanding her expertise into the realm
+                  of cybersecurity. As a new graduate, Aryian is carving out her niche by blending system-level knowledge
+                  with modern application development.
+                 
+                 
+
                   <br/><br/>
-                  I am open to internships and new grad
-                  positions.
-                  <br/><br/>
-                  Feel free to reach out, connect with me on LinkedIn, or
-                  view my GitHub!
+                  Open to full-time roles: <a href='aryianjones03@gmail.com' className='text-blue-600'>email me</a>.
                 </p>
 
                 <h1 className='sm:text-lg mt-2 sm:text-left text-center'>Languages</h1>
@@ -149,6 +139,7 @@ function Home() {
                   ))}
                 </div>
               </div>
+              {/*
                 <p className='sm:text-lg sm:text-left text-center sm:my-0 my-1'>Currently...</p>
                 <div className="flex flex-row justify-between sm:mt-2 sm:text-left text-center">
                   <div className='flex'>
@@ -176,7 +167,9 @@ function Home() {
                     </ul>
                   </div>
                 </div> 
+                 */}
               </div>
+             
             </div>
             <Footer />
           </div>

@@ -11,8 +11,8 @@ function Nav() {
           <img src="/a.png" className='sm:h-22 h-0 border-2 rounded-full sm:mr-4' alt="" />
           <div className="flex flex-col">
             <p className='sm:text-3xl text-xl '>Aryian Jones</p>
-            <p className='sm:visible invisible'>Web Developer, UI/UX Designer, Student</p>
-            <p className='sm:visible invisible'>Based in <span className='text-blue-600 '>San Francisco</span></p>
+            <p className='sm:visible invisible'>USFCA Alumna | B.S. in Computer Science | Software Engineer</p>
+            <p className='sm:visible invisible'>Based in <span className='text-blue-600 '>Cleveland, OH</span></p>
           </div>
         </div>
         <div className="flex sm:flex-row flex-col sm:space-x-3 text-gray-900 sm:text-xl text-sm rounded-sm">
@@ -24,7 +24,7 @@ function Nav() {
             <div className="flex flex-col sm:hidden p-2 absolute top-8 right-1.5 space-y-1 bg-gray-50 border rounded-md shadow-md z-20">
               <Link to="/" onClick={() => setShowMenu(false)}>Home</Link>
               <Link to="/archive" onClick={() => setShowMenu(false)}><p>Archive</p></Link>
-              <a href="/Aryian-Jones-Resume-2025.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setShowMenu(false)}><p>Resume</p></a>
+              <a href="/Aryian-Jones-Resume-2026.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setShowMenu(false)}><p>Resume</p></a>
               <a href="https://www.linkedin.com/in/aryianjones" target="_blank" rel="noopener noreferrer" onClick={() => setShowMenu(false)}><p>LinkedIn</p></a>
               <a href="https://www.github.com/aryianj" target="_blank" rel="noopener noreferrer" onClick={() => setShowMenu(false)}><p>GitHub</p></a>
             </div>
