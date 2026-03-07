@@ -10,8 +10,8 @@ function Home() {
       link: 'https://github.com/number1jmookfan/donzart'
     },
     {
-      title: 'Birthday Command',
-      tools: 'C, Unix, Command Line Tool',
+      title: 'Unix System Utility Suite',
+      tools: 'C, Linux',
       link: 'https://github.com/aryianj/FogOSv2'
     },
     {
