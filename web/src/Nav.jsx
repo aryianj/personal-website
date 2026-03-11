@@ -16,7 +16,7 @@ function Nav() {
             <div className='flex flex-col sm:hidden p-2 absolute top-8 right-1.5 space-y-1 border rounded-md shadow-md z-20'>
               <a href='#abt'>About</a>
               <a href='#work'>Works</a>
-              <a href='/Aryian-Jones-Resume-2025.pdf' target='_blank' rel='noopener noreferrer'><p>Resume</p></a>
+              <a href='/Aryian-Jones-Resume-2026.pdf' target='_blank' rel='noopener noreferrer'><p>Resume</p></a>
               <a href='https://www.linkedin.com/in/aryianjones' target='_blank' rel='noopener noreferrer'><p>LinkedIn</p></a>
               <a href='https://www.github.com/aryianj' target='_blank' rel='noopener noreferrer'><p>GitHub</p></a>
             </div>
@@ -25,7 +25,7 @@ function Nav() {
         <div className='hidden sm:flex sm:flex-row sm:space-x-2 text-gray-900 sm:text-lg text-sm rounded-sm'>
           <a href='#abt' className='hover:underline'>About</a>
           <a href='#work' className='hover:underline'>Works</a>
-          <a href='/Aryian-Jones-Resume-2025.pdf' target='_blank' rel='noopener noreferrer' className='hover:underline'><p>Resume</p></a>
+          <a href='/Aryian-Jones-Resume-2026.pdf' target='_blank' rel='noopener noreferrer' className='hover:underline'><p>Resume</p></a>
           <a href='https://www.linkedin.com/in/aryianjones' target='_blank' rel='noopener noreferrer'  lassName='hover:underline'><p>LinkedIn</p></a>
           <a href='https://www.github.com/aryianj' target='_blank' rel='noopener noreferrer' className='hover:underline'><p>GitHub</p></a>
         </div>
